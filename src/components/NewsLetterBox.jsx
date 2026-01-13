@@ -7,7 +7,7 @@ const NewsLetterBox = () => {
 
   return (
     <div className="text-center">
-      <p className="text-2xl font-medium text-gray-800">
+      <p className="text-2xl font-medium text-white">
         Subscribe now & get 10% off
       </p>
       <p className="text-gray-400 mt-3">
@@ -20,13 +20,13 @@ const NewsLetterBox = () => {
         className="w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3"
       >
         <input
-          className="w-full sm:flex-1 outline-none"
+          className="w-full sm:flex-1 outline-none bg-black text-white"
           type="email"
           placeholder="Enter your email"
         />
         <button
           type="submit"
-          className="bg-black text-white text-xs px-10 py-4"
+          className="bg-white text-black text-xs px-10 py-4"
         >
           SUBSCRIBE
         </button>

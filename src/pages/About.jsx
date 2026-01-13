@@ -4,9 +4,9 @@ import { assets } from "../assets/assets";
 const About = () => {
   return (
     <div className="mx-3 sm:mx-[5%]">
-      <div className="text-center text-2xl pt-10 text-gray-500">
+      <div className="text-center text-2xl pt-10 text-white">
         <p>
-          ABOUT <span className="text-gray-700 font-semibold">US</span>
+          ABOUT <span className="text-white font-semibold">US</span>
         </p>
       </div>
 
@@ -17,7 +17,7 @@ const About = () => {
           alt=""
         />
 
-        <div className="flex flex-col justify-center gap-6 lg:w-[50%] text-sm text-gray-600">
+        <div className="flex flex-col justify-center gap-6 lg:w-[50%] text-sm text-white">
           <p>
             Altocumulus Technologies Private Limited is a cloud-focused training
             and placement organization specializing in Microsoft Azure and
@@ -54,11 +54,11 @@ const About = () => {
 
       <div className="text-xl my-4">
         <p>
-          WHY <span className="text-gray-700 font-semibold">CHOOSE US: </span>
+          WHY <span className="text-white font-semibold">CHOOSE US: </span>
         </p>
       </div>
       <div className="flex flex-col md:flex-row mb-20">
-        <div className="border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-black hover:text-white transition-all duration-300 text-gray-600 cursor-pointer">
+        <div className="border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-white hover:text-black transition-all duration-300 text-gray-300 cursor-pointer">
           <b>EFFICIENCY:</b>
           <p>
             Streamlined appointment scheduling that fits into your busy
@@ -66,12 +66,12 @@ const About = () => {
           </p>
         </div>
 
-        <div className="border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-black hover:text-white transition-all duration-300 text-gray-600 cursor-pointer">
+        <div className="border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-white hover:text-black transition-all duration-300 text-gray-300 cursor-pointer">
           <b>CONVENIENCE: </b>
           <p>Access to a network of trusted IT professionals in your area.</p>
         </div>
 
-        <div className="border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-black hover:text-white transition-all duration-300 text-gray-600 cursor-pointer">
+        <div className="border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-white hover:text-black transition-all duration-300 text-gray-300 cursor-pointer">
           <b>PERSONALIZATION:</b>
           <p>
             Tailored recommendations and reminders to help you stay on top of

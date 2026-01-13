@@ -1,5 +1,5 @@
 
-import logo from './logo.png'
+import logo from './logo.jpg'
 import bannerright from './bannerright.jpg'
 import bannerleft from './bannerleft.jpg'
 import cart_icon from './cart_icon.png'

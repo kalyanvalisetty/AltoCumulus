@@ -18,7 +18,7 @@ const Navbar = () => {
         <Link to="/">
           <img className="w-20 mt-4" src={assets.logo} alt="logo" />
         </Link>
-        <h1 className="text-2xl mt-4 hidden lg:block">
+        <h1 className="text-2xl mt-4 hidden lg:block text-white">
           Altocumulus Technologies Private Limited
         </h1>
       </div>
