@@ -48,11 +48,11 @@ const Navbar = () => {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed top-0 right-0 bottom-0 z-50 bg-white transition-all duration-300 ${
+        className={`fixed top-0 right-0 bottom-0 z-50 bg-black transition-all duration-300 ${
           visible ? "w-full" : "w-0"
         } overflow-hidden`}
       >
-        <div className="flex flex-col text-gray-800">
+        <div className="flex flex-col text-white">
           
           {/* Back Button */}
           <div
@@ -67,15 +67,15 @@ const Navbar = () => {
             <p className="text-gray-400">BACK</p>
           </div>
 
-          <Link onClick={() => setVisible(false)} className="py-3 pl-6 border" to="/">
+          <Link onClick={() => setVisible(false)} className="py-3 pl-6" to="/">
             HOME
           </Link>
 
-          <Link onClick={() => setVisible(false)} className="py-3 pl-6 border" to="/about">
+          <Link onClick={() => setVisible(false)} className="py-3 pl-6" to="/about">
             ABOUT
           </Link>
 
-          <Link onClick={() => setVisible(false)} className="py-3 pl-6 border" to="/contact">
+          <Link onClick={() => setVisible(false)} className="py-3 pl-6" to="/contact">
             CONTACT
           </Link>
         </div>
