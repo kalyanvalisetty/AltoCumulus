@@ -10,7 +10,8 @@ app.use(cors());
 
 // CORS configuration
 app.use(cors({
-  origin: "http://localhost:5173", // Your React app URL
+  // origin: "http://localhost:5173", // Your React app URL
+  origin: "https://alto-cumulus.vercel.app/", // Your React app URL
   methods: ["POST"],
   credentials: true
 }));
