@@ -16,12 +16,12 @@ const Banner = () => {
           <h1 className="text-2xl sm:py-3 lg:text-5xl leading-relaxed">
             ALTOCUMULUS TECHNOLOGIES PVT LTD
           </h1>
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <p className="w-8 md:w-40 h-[2px] bg-white"></p>
             <p className="font-semibold text-sm md:text-base">
               TRAINING & PLACEMENTS
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       {/**Hero Right side */}

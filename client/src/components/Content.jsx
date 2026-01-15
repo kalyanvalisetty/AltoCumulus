@@ -9,20 +9,15 @@ const Content = () => {
         {/* Left Content */}
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Build Your Career in <span className="text-blue-500">Cloud & Azure</span>
+            ALTOCUMULUS TECHNOLOGIES
           </h1>
 
           <p className="text-gray-300 text-lg leading-relaxed">
-            Altocumulus Technologies Private Limited is a cloud-focused training
-            and placement platform helping students and professionals gain
-            real-world expertise in Microsoft Azure, DevOps, and modern cloud
-            technologies.
+            Altocumulus is a advanced AI-driven technologies to deliver data-driven commercial intelligence and seamless supply chain processes at every tier, enhancing efficiency, collaboration, and resilience to drive superior business performance.
           </p>
 
           <p className="text-gray-400">
-            Learn from industry experts, work on hands-on projects, and prepare
-            for real cloud roles with structured training and placement
-            assistance designed for today's job market.
+            To empower enterprises with data-driven commercial intelligence and seamless supply chain operations, fully optimized for efficiency, collaboration, and resilience.
           </p>
 
           {/* CTA Buttons */}
@@ -44,7 +39,7 @@ const Content = () => {
         </div>
 
         {/* Right Visual */}
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <div className="w-full max-w-md bg-gray-900 rounded-2xl shadow-lg p-8 border border-gray-800">
             <h3 className="text-xl font-semibold text-white mb-4">
               What You'll Learn
@@ -58,7 +53,7 @@ const Content = () => {
               <li>✓ Interview Preparation & Placement Support</li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </section>

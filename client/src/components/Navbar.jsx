@@ -11,7 +11,7 @@ const Navbar = () => {
   }, [visible]);
 
   return (
-    <div className="relative flex items-end justify-between font-medium border-b-2 pb-4 border-b-slate-400">
+    <div className="relative flex items-end justify-between font-medium pb-4">
       
       {/* Logo + Company Name */}
       <div className="flex flex-row items-center gap-4">

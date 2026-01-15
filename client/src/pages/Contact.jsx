@@ -17,11 +17,17 @@ const Contact = () => {
           <p className="text-gray-200">Tel: +91-903-053-7606 <br/> Email: altocumulustechnologies@gmail.com</p>
           <p className="font-semibold text-lg text-white">CAREERS AT ALTOCUMULUS</p>
           <p className="text-gray-200">Learn more about our teams and job openings.</p>
-          <button className="border border-gray-400 px-8 py-4 text-sm text-white hover:bg-gray-900 transition-all duration-500">Explore Jobs</button>
+          <a href='#contact-us'> 
+          <button className="border border-gray-400 px-8 py-4 text-sm text-white hover:bg-gray-900 transition-all duration-500">
+           Explore Jobs
+          </button>
+          </a>
         </div>
       </div>
     </div>
-    <NewsLetterBox/>
+    <div id="contact-us" >
+      <NewsLetterBox/>
+    </div>
    </div>
   )
 }
