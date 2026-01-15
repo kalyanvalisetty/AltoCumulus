@@ -6,22 +6,36 @@ import cors from "cors";
 import contactRoutes from "./routes/contactRoutes.js";
 
 const app = express();
-app.use(cors());
 
-// CORS configuration
-app.use(cors({
-  // origin: "http://localhost:5173", // Your React app URL
-  origin: "https://alto-cumulus.vercel.app/", // Your React app URL
-  methods: ["POST"],
-  credentials: true
-}));
+// CORS Configuration - Define FIRST, then use
+const corsOptions = {
+  origin: [
+    'http://localhost:5173', // Vite dev server
+    'http://localhost:3000', // CRA dev server (if you use it)
+    'https://altocumulustechnologies.com', // Your production domain
+    'https://alto-cumulus.vercel.app' // Your Vercel URL (NO trailing slash!)
+  ],
+  methods: ['POST', 'GET', 'OPTIONS'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions)); // Use ONCE
 
 app.use(express.json());
-app.use("/api/contact", contactRoutes);
-app.get('/health', (req,res)=>{
-  res.send("Working!")
-})
 
+// Health check
+app.get('/health', (req, res) => {
+  res.status(200).json({ 
+    status: 'OK', 
+    timestamp: new Date().toISOString() 
+  });
+});
+
+// Routes
+app.use("/api/contact", contactRoutes);
+
+// Debug logs (remove in production)
 console.log("SMTP_USER:", process.env.SMTP_USER);
 console.log("SMTP_PASS:", process.env.SMTP_PASS ? "✓ loaded" : "✗ missing");
 
