@@ -17,11 +17,14 @@ app.use(cors({
 
 app.use(express.json());
 app.use("/api/contact", contactRoutes);
+app.get('/health', (req,res)=>{
+  res.send("Working!")
+})
 
 console.log("SMTP_USER:", process.env.SMTP_USER);
 console.log("SMTP_PASS:", process.env.SMTP_PASS ? "✓ loaded" : "✗ missing");
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
 
 export default app;
