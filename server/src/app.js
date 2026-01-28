@@ -13,7 +13,8 @@ const corsOptions = {
     'http://localhost:5173', // Vite dev server
     'http://localhost:3000', // CRA dev server (if you use it)
     'https://altocumulustechnologies.com', // Your production domain
-    'https://alto-cumulus.vercel.app' // Your Vercel URL (NO trailing slash!)
+    'https://www.altocumulustechnologies.com',
+    'https://altocumulustechnologies.vercel.app/' // Your Vercel URL (NO trailing slash!)
   ],
   methods: ['POST', 'GET', 'OPTIONS'],
   credentials: true,
