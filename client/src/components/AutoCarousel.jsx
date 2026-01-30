@@ -88,7 +88,7 @@ const AutoCarousel = () => {
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentSlide
-                ? "bg-orange-500 scale-125"
+                ? "bg-white scale-125"
                 : "bg-gray-500 hover:bg-gray-400"
             }`}
             aria-label={`Go to slide ${index + 1}`}
@@ -99,7 +99,7 @@ const AutoCarousel = () => {
       {/* Scroll Down Arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <svg
-          className="w-6 h-6 text-orange-500"
+          className="w-6 h-6 text-white"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
